@@ -1,0 +1,135 @@
+
+
+#items {
+   
+   display: flex; 
+   flex-direction: column;
+   justify-content: flex-start;
+   box-sizing:border-box;
+   
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
+   width: 40%;
+   height : 340px;
+   gap: 0.2cm;
+   overflow-x: hidden;   /*scrollbar sur les X */
+   overflow-y: auto; /*scrollbar sur les Y */
+   
+   background-color:transparent;
+   
+ }
+ 
+ div[id^="art"] {
+
+
+   display: flex;
+   
+   flex-direction  : row; 
+   
+   width : 100%;
+   height: 300px ;
+   margin: 2px;
+   
+   
+   background-color: transparent;
+   box-sizing: content-box;
+   border: 2px solid rgb(153, 161, 157);
+   
+ }
+
+ 
+ img[id^="imgArt"] {
+   
+   border: 2px solid transparent;
+   flex : 0% ;
+   
+    width            : 60%;  
+    height           : 170px;  
+   /* overflow-x       : auto; */
+   /* overflow-y       : auto; */
+
+   /* max-width: 100%; */
+ 
+	
+
+ }
+ img[id^="imgAime"] {
+   
+   border: 2px solid transparent;
+   
+   
+    width            : 10%;  
+    height           : 50%;  
+ }
+
+ img[id^="imgDelete"] {
+   
+   border: 2px solid transparent;
+   
+   
+    width            : 8%;  
+    height           : 50%;  
+ }
+ div[id^="piedImage"] {
+   flex-direction: column;
+   background-color  :  rgb(43, 226, 165);
+   border-width      : 1px   ;
+   display           : flex   ;
+   width             : 100%;
+   overflow-x        : auto ;
+   overflow-y        : auto ;
+   font-size         : 12px ;
+   font-family       : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color  : transparent ;
+
+   
+ }  
+
+ 
+
+ /* les champs qteArt */
+input[id^="qteArt"] {
+   width: 15px;
+   height: 15px;
+   color : black ;
+   border-width     : 1px   ;
+   background-color:transparent;
+   border-color:transparent ;
+}
+
+input[id^="button"] {
+
+    display: flex;
+   flex-direction  : column; 
+   align-items:center;
+   width : 20px;
+   height: 20px ;
+   color: white;
+   background-color:black;
+   border-color:black
+    
+ }
+art {
+   border-color: #b30000;
+   border-width: 3px;
+   font-size       : "100px" ;
+ }  
+
+ div[id^="qte"] {
+  display : flex;
+ }
+
+ div[id^="txtPiedImage"] {
+    align-items:  center ;
+    display : inline;
+    
+   }
+p[id^="desArt"] {
+   display: inline;
+   flex-direction  : row; 
+   align-items:  center ;
+   width: 100%;
+      }
+
